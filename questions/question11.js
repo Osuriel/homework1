@@ -15,6 +15,9 @@ var user = {
 };
 
 // Once you have grabbed the favorite foods. Deconstruct the food array to grab only the first 2 values.
-const foods = user.favoriteThings.food;
+
+const { favoriteThings: { food } } = user
+
+const [pizza, tacos] = food;
 
 console.log(foods[0], foods[1]);
